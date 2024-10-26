@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Procesada</title>
+    <style>
+        img {
+            max-width: 50%; /* Cambia el porcentaje según sea necesario */
+            height: auto; /* Mantiene la relación de aspecto */
+            display: block; /* Para centrar la imagen */
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagen Procesada</h1>
+    <img src="{{ url_for('send_image', filename=filename) }}" alt="Imagen procesada">
+    <a href="{{ url_for('index') }}">Volver</a>
+</body>
+</html>

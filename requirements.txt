@@ -1,0 +1,5 @@
+Flask
+opencv-python-headless  # Para evitar conflictos con la interfaz gráfica
+dlib  # Para detección de rostros
+Werkzeug  # Para manejar archivos
+
